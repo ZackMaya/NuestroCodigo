@@ -1,0 +1,569 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+body{
+	margin: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+h5{
+  color: white;
+}
+
+/*Imagen de fondo*/
+#s{
+  width: 100%;
+  height: 700px;
+  z-index: -1;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background-image: url("../imagenes/otro2.png");
+}
+
+/*Redes sociales*/
+#iconos{
+    width: 30px;
+    height: 30px;
+    -webkit-transition: -webkit-transform .5s ease-out;
+    -moz-transition: -moz-transform .5s ease-out;
+     transition: transform .5s ease-out;
+}
+#social{
+    width: 300px;
+    float: right;
+    display: inline-block;
+}
+
+#iconos:hover{
+-webkit-transform: rotate(360deg);
+ -moz-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+
+/*icono uacm*/
+#uacm{
+    border-radius: 100px;
+    width: 400px;
+    height: 80px;
+    opacity: 0.45;
+    margin: 1em 18%;
+}
+/*logo*/
+#icono{
+    width: 250px;
+    height: 100px;
+    border-radius: 100px;
+    float: left;
+}
+
+hr{
+  color: white;
+    
+}
+
+#bienvenida{
+    z-index:-1;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;  
+    text-shadow: 1px 1.2px #999;
+}
+
+#bienvenida h1{
+    color:white;
+    font-size: 32px;
+}
+
+#bienvenida h2{
+    color: white;
+    font-size: 26px;
+     text-shadow: 1px 1px #999;
+}
+/*termina bloque 1*/
+
+#d{
+    width: 70%;
+    height: 280px;
+    display:inline-block;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#d h1,#d2 h1,#d1 h1{
+    color:orange;
+    
+}
+#d p,#d1 p,#d2 p{
+    font-size: 20px;
+}
+
+#d hr{
+    background-color: gold;
+}
+
+
+#d1{
+    width: 70%;
+    height: 280px;
+    display:block;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+#d2{
+    width: 70%;
+    height: 280px;
+    display:inline-block;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+
+#paraque{
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+    height: auto;
+    
+}
+
+#paraque h1{
+    color: black;
+    font-size: 20px;
+    font-family:inherit;
+}
+
+/**parte de las recomendaciones**/
+#fondocontenido{
+    padding-top: 100px;
+    padding-bottom: 100px;
+ background-color: #010813;
+}
+
+#fondocontenido h1{
+    color:whitesmoke;
+    font-family:serif;
+    font-size: 25px;
+    width: auto;    
+}
+#fondocontenido h2{
+    color: whitesmoke;
+    font-family:serif;
+    font-size: 20px;
+    padding-top: 15px;
+    display: inline-block;   
+}
+
+/**parte de equipo de trabajo**/
+#equipo{
+    padding-top: 50px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: auto;
+    background-image: url("../imagenes/textura.jpg");
+    z-index: -1;
+}
+
+#imagencircular{
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 50%; 
+    box-shadow: 0 0 20px 1px;
+}
+/*Columnas de equipo0**/
+section{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+.wrap{
+  -webkit-columns: 240px;
+     -moz-columns: 240px;
+          columns: 240px;
+  -webkit-column-gap: 140px;
+     -moz-column-gap: 140px;
+          column-gap: 140px;
+}
+h2{
+  padding: 5px 5px;
+  font-weight: normal;
+  color: rgb(26,32,44);
+}
+h3{
+  color: rgb(130,130,130);
+  margin-bottom: .3em;
+  font-weight: normal;
+}
+p+p{
+  margin-top: .3em;
+}
+article{
+  padding: 35px;
+  background-color: #ecf0f1;
+  -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 1px;
+}
+
+article:hover{
+    background-color: #fc3d31;
+    box-shadow: 0 0 20px 1px red;
+
+}
+article:hover p, article:hover h3, article:hover h2{
+    color:white;
+}
+article+article{
+  margin: 20px 0;
+}
+#fotoequipo{
+    border: 2px solid red;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border:1px red dashed;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+/************************/
+/*Ventana modal con CSS*/
+/*Creditos y referencia http://www.webgae.com/demo/modal-con-css/#*/
+#modal {
+  left:50%;
+  margin:-250px 0 0 -40%;
+  opacity: 0;
+  position:absolute;
+  top:-50%;
+  visibility: hidden;
+  width:80%;
+  box-shadow:0 3px 7px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+  #modal:target {
+    opacity: 1;
+    top:100%;
+    visibility: visible;
+  }
+#modal .header,#modal .footer {
+  border-bottom: 1px solid #e7e7e7;
+  border-radius: 5px 5px 0 0;
+}
+  #modal .footer {
+    border:none;
+    border-top: 1px solid #e7e7e7;
+    border-radius: 0 0 5px 5px;
+  }
+#modal h2 {
+  margin:0;
+}
+#modal .btn {
+  float:right;
+}
+#modal .copy,#modal .header, #modal .footer {
+  padding:5px;
+}
+.modal-content {
+  background: #f7f7f7;
+  position: relative;
+  z-index: 20;
+  border-radius:5px;
+}
+#modal .copy {
+  background: orange;
+}
+ 
+#modal .overlay {
+  background-color: #000;
+  background: rgba(0,0,0,.5);
+  height: auto;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: auto;
+  z-index: 10;
+}
+
+/*Modal2*/
+#modal2 {
+  left:50%;
+  margin:-250px 0 0 -40%;
+  opacity: 0;
+  position:absolute;
+  top:-50%;
+  visibility: hidden;
+  width:80%;
+  box-shadow:0 3px 7px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+  #modal2:target {
+    opacity: 1;
+    top:100%;
+    visibility: visible;
+  }
+#modal2 .header,#modal2 .footer {
+  border-bottom: 1px solid #e7e7e7;
+  border-radius: 5px 5px 0 0;
+}
+  #modal2 .footer {
+    border:none;
+    border-top: 1px solid #e7e7e7;
+    border-radius: 0 0 5px 5px;
+  }
+#modal h2 {
+  margin:0;
+}
+#modal2 .btn {
+  float:right;
+}
+#modal2 .copy,#modal2 .header, #modal2 .footer {
+  padding:5px;
+}
+.modal2-content {
+  background: #f7f7f7;
+  position: relative;
+  z-index: 20;
+  border-radius:5px;
+}
+#modal2 .copy {
+  background: orange;
+}
+ 
+#modal2 .overlay {
+  background-color: #000;
+  background: rgba(0,0,0,.5);
+  height: auto;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: auto;
+  z-index: 10;
+}
+
+
+/* Footer ...pie de la página*/
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+.footer-distributed{
+	background-color:  #151515;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 10px 55px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer izquierdo */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* Logo */
+.footer-distributed img{
+	margin: 4px;
+    margin-top: 20px;
+    margin-right: 3px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 10px 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Centro */
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+/*iconos ubicación*/
+.footer-distributed .footer-center i{
+	font-size: 25px;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+/*dirección*/
+.footer-distributed .footer-center p span{
+	display:inline-block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:1.5;
+}
+
+/* Footer Derecho */
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/*iconos footer*/
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+/*Parte del estilo responsivo*/
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .closebtn {
+    font-size: 40px !important;
+    top: 15px;
+    right: 35px;
+  }
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .closebtn {
+    font-size: 40px !important;
+    top: 15px;
+    right: 35px;
+  }
+
+    
+
+

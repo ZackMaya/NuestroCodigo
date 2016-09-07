@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nuestro Código</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./imagenes/">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Para reconocer acentos y caracteres especiales-->
+	<!--estilo-->
+	<link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="./css/2.css">
+	<!--Efecto jquery circulos-->
+	<link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/2.css">
+    <!--Fuentes y librerias google-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--Estilos para el menu principal-->
+	<link rel="stylesheet" href="assets/navigation-basic.css">
+	<link rel="stylesheet" href="assets/slicknav/slicknav.min.css">
+	<!--Slider-->
+	 <link href="./css/ninja-slider.css" rel="stylesheet" type="text/css" />
+    <script src="./js/ninja-slider.js" type="text/javascript"></script>
+	<!--Javascript-->
+	<script src="./js/jquery.ticker.js" type="text/javascript"></script>
+	<script src="./js/eskju.jquery.scrollflow.min.js"></script>
+	<!--Menu responsivo-->
+	<script src="assets/slicknav/jquery.slicknav.min.js"></script>
+	<!--Animate-->
+	<link rel="stylesheet" href="./css/animate.css">
+    <!--Menu responsive-->
+	<script>
+		$(function(){
+	        var menu = $('.menu-navigation-basic');
+	        menu.slicknav();
+	        menu.on('click', 'a', function(){
+	            var a = $(this);
+	            a.siblings().removeClass('selected');
+	            a.addClass('selected');
+	        });
+	    });  
+	</script>
+</head>
+
+<body>
+
+
+	<nav class="menu-navigation-basic">
+		<a href="#" class="selected">Inicio</a>
+		<a href="#">Software Libre</a>
+		<a href="#">Recursos</a>
+		<a href="#">Noticias</a>
+		<a href="#">Materia</a>
+		<a href="#">Visita</a>
+	</nav>
+
+    
+	<div id="s">
+        <a href="index.html"><img id="icono" src="./imagenes/nc3.png" title="Nuestro Código"></a>
+        <a href="http://www.uacm.edu.mx" target="_blank"><img id="uacm" src="./imagenes/uacm.png" alt=""></a>
+        
+    	<!--Redes sociales-->
+        <div id="social">
+			<a href="" target="_blank" ><img id="iconos" src="./imagenes/iconotwitter.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconotwitter2.png';" onmouseout="this.src='./imagenes/iconotwitter.png';" title="Twitter"></a>
+			<a href="" target="_blank"><img id="iconos" src="./imagenes/blogger.png" width="25px" height="25px" onmouseover="this.src='./imagenes/bloggerblanco.png';" onmouseout="this.src='./imagenes/blogger.png';" title="Blogger"></a>
+			<a href="https://www.facebook.com/uacemita" target="_blank"><img id="iconos" src="./imagenes/iconofacebook.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconofacebook2.png';" onmouseout="this.src='./imagenes/iconofacebook.png';" title="Facebook"></a>	
+			<a href="" target="_blank"><img id="iconos" src="./imagenes/github3.png" width="25px" height="25px" onmouseover="this.src='./imagenes/github2.png';" onmouseout="this.src='./imagenes/github3.png';" title="Github"></a>
+        </div>  
+    	
+        <br><br><br><br>
+		<!--Bienvenida-->
+		<div id="bienvenida">
+            <h1 class="animated zoomIn">ESTE ESPACIO ES UNA RED DE UNIVERSITARIOS DE LA UACM INTERESADOS EN EL DESARROLLO DE SOFTWARE</h1>
+
+            <hr>
+            <h2 class="animated flip">¡Un espacio de nosotros y para nosotros!</h2> 
+		</div>
+	</div>
+
+
+	
+    
+    
+    <!--Contenido-->
+            <div id="paraque">
+            
+                <div class="view view-first">
+                    <img class="scrollflow -pop -opacity" src="./imagenes/biblio.jpg" />
+                    <div class="mask">
+                      <h2>Ingeniería de Software</h2>
+                      <p>Convierte en un alumno que tenga las bases, conocimiento y actitud en su carrera.</p>
+                    </div>
+                </div><br><br><br><br>
+                
+		        <div id="d">
+		         
+                    <h2 class="scrollflow -slide-left -opacity">¿Para qué?</h2>
+                    <p class="scrollflow -slide-left -opacity">Esta página es una iniciativa del grupo de Ingeniería de Software para que nosotros como estudiantes tengamos un espacio donde encontrar información acerca de nuestra carrera así como algunas herramientas, noticias, y actualizaciones que nos ayudarán a ser estudiantes de alta calidad.
+                    Nuestro objetivo es que tengamos un lugar donde encontrar exactamente lo que necesitamos para seguir avanzando en nuestra vida académica.</p>
+		        </div>
+
+		         <div class="view view-second">
+                    <img class="scrollflow -pop -opacity" src="./imagenes/chico.jpg" />
+                    <div class="mask">
+                      <h2>Nuestro Espacio</h2>
+                      <p>Todo reunido en un sólo lugar.</p>
+                    </div>
+                </div><br><br>
+            
+		        <div id="d1">
+		            <h2 class="scrollflow -slide-top -opacity">¿Porque?</h2>
+                    <p class="scrollflow -slide-top -opacity">Ya necesitabamos un espacio para que nuestras necesidades academicas puedan verse entendidas, además de que entre más bases tengamos y más conocimiento compartamos seremos mejores estudiantes y por lo tanto mejores Ingenieros de Software.</p>
+		        </div><br><br><br>
+
+                
+                     
+                <div class="view view-tercer">
+                    <img class="scrollflow -pop -opacity" src="./imagenes/compu.png" />
+                    <div class="mask">
+                      <h2>Todo lo que necesitas</h2>
+                      <p>Herramientas, Materias, Software libre, Lugares, Noticias.</p>
+                    </div>
+                </div><br><br>
+                
+		        <div id="d2">
+		           <h2 class="scrollflow -slide-right -opacity">¿Cómo?</h2>
+                    <p class="scrollflow -slide-right -opacity">Nuestro Código se divide en varios aspectos primero, compartir conocimiento entre toda nuestra comunidad de Ingeniería de Software, porteriormente actualizarte en todos los aspectos tecnológicos que nos son de utilidad, así como recomendaciones, software libre, lenguajes primordiales que te servirán en la carrera y lugares los cuales visitar.</p>
+                </div><br><br><br><br><br>
+            
+	           <!--slider-->
+                <div id="ninja-slider">
+                    <div class="slider-inner">
+                        <ul>
+                            <li>
+                                <a class="ns-img" href="./imagenes/codigo.jpg"></a>
+                                <div class="caption">Bienvenido<br>a "Nuestro Código"</div>
+                            </li>
+                            <li>
+                                <a class="ns-img" href="./imagenes/cuau.png"></a>
+                                <div class="caption">Actualizate <br>
+                                conoce noticias sobre ingeniería de software que te ayudarán en tu carrera
+                                </div>
+                            </li>
+                            <li>
+                                <a class="ns-img" href="./imagenes/uacm3.png"></a>
+                                <div class="caption">Aprende<br>
+                                refuerza tus conocimientos en areas específicas de software</div>
+                            </li>
+                            <li>
+                                <a class="ns-img" href="./imagenes/comedor2.png"></a>
+                                <div class="caption">Comparte<br>
+                                la red de Ingeniería de Software es para ayudarnos a todos</div>
+                            </li>
+                            <li>
+                                <a class="ns-img" href="./imagenes/sanlorenzo.png"></a>
+                                <div class="caption">Acercate<br>
+                                nuestro contenido es de relevancia para tus estudios</div>
+                            </li>
+                        </ul>
+                        <div class="navsWrapper">
+                            <div id="ninja-slider-prev"></div>
+                            <div id="ninja-slider-next"></div>
+                        </div>
+                    </div>
+                </div>
+	            
+			    <!--Parte de la vista del contenido-->
+                <div id="fondocontenido" >
+                    <center><h1>Recomendaciones para tu desarrollo en tu carrera de Ingeniería de Software</h1></center>
+                    <div id="container" class="scrollflow -pop -opacity">
+                        <section class="main">
+                                <ul class="ch-grid">
+                                    <li>
+                                        <div class="ch-item">				
+                                            <div class="ch-info">
+                                                <div class="ch-info-front ch-img-1"></div>
+                                                <div class="ch-info-back">
+                                                    <h3>Práctica programar a diario</h3>
+                                                </div>	
+                                            </div>
+                                        </div>
+                                        <h2>Programa</h2><br>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="ch-item">
+                                            <div class="ch-info">
+                                                <div class="ch-info-front ch-img-2"></div>
+                                                <div class="ch-info-back">
+                                                    <h3>Haz equipos de trabajo</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h2>Reúnete</h2>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="ch-item">
+                                            <div class="ch-info">
+                                                <div class="ch-info-front ch-img-3"></div>
+                                                <div class="ch-info-back">
+                                                    <h3>Utiliza software libre</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h2>Utiliza</h2>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="ch-item">
+                                            <div class="ch-info">
+                                                <div class="ch-info-front ch-img-4"></div>
+                                                <div class="ch-info-back">
+                                                    <h3>Planea procesos de trabajo</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h2>Crea</h2>
+                                    </li>
+                                    
+                                </ul>	
+                            </section>
+                    </div>
+                </div>
+            </div>
+            
+            
+    <!--Equipo de trabajo-->
+        <div id="equipo">
+        <section>
+	        <center><h2>EQUIPO DE DESARROLLO</h2></center><br>
+  	        <div class="wrap">
+                <article>
+                   <center>
+                   <h2 class="scrollflow -slide-top -opacity">Coordinadora del Proyecto</h2>
+                        <img class="scrollflow -pop -opacity" id="imagencircular" src="./imagenes/ProfesoraAlejandra.jpg" width="100px" height="100px">
+                        <h3>Dr. Silvia Alejandra Andrade</h3><hr>
+                        <div id="social">
+                            <a href="#" target="_blank" ><img id="iconos" src="./imagenes/iconotwitter.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconotwitter2.png';" onmouseout="this.src='./imagenes/iconotwitter.png';" title="Twitter"></a>
+                            <a href="#" target="_blank"><img id="iconos" src="./imagenes/iconofacebook.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconofacebook2.png';" onmouseout="this.src='./imagenes/iconofacebook.png';" title="Facebook"></a>	
+                            <a href="mailto:tudireccion@email.com" target="_blank"><img id="iconos" src="./imagenes/email.png" width="25px" height="25px"
+                            onmouseover="this.src='./imagenes/emailblanco.png';" onmouseout="this.src='./imagenes/email.png';" title="Email"></a>  
+                        </div>
+                    </center>
+                        <br><br>
+                        <p>
+                           Presentación..... 
+                        </p>        
+                </article>
+                <article>
+                   <center>
+                    <h2 class="scrollflow -slide-top -opacity">Materias y Seguimiento</h2>
+                        <img class="scrollflow -pop -opacity" id="imagencircular" src="./imagenes/andrea.jpg" width="100px" height="100px">
+                        <h3>Andrea Reyes Garcia</h3><hr>
+                     <div id="social">
+                            <a href="#" target="_blank" ><img id="iconos" src="./imagenes/iconotwitter.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconotwitter2.png';" onmouseout="this.src='./imagenes/iconotwitter.png';" title="Twitter"></a>
+                            <a href="#" target="_blank"><img id="iconos" src="./imagenes/iconofacebook.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconofacebook2.png';" onmouseout="this.src='./imagenes/iconofacebook.png';" title="Facebook"></a>	
+                            <a href="mailto:tudireccion@email.com" target="_blank"><img id="iconos" src="./imagenes/email.png" width="25px" height="25px"
+                            onmouseover="this.src='./imagenes/emailblanco.png';" onmouseout="this.src='./imagenes/email.png';" title="Email"></a>  
+                        </div>
+                    </center>
+                    <br><br>
+                    <p>
+                        Presentación.....
+                    </p>
+                </article>
+                <article>
+                   <center>
+                    <h2 class="scrollflow -slide-top -opacity">Noticias y Actualizaciones</h2>
+                        <img class="scrollflow -pop -opacity" id="imagencircular" src="./imagenes/" width="100px" height="100px">
+                        <h3>Viridiana</h3><hr>
+                     <div id="social">
+                            <a href="#" target="_blank" ><img id="iconos" src="./imagenes/iconotwitter.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconotwitter2.png';" onmouseout="this.src='./imagenes/iconotwitter.png';" title="Twitter"></a>
+                            <a href="#" target="_blank"><img id="iconos" src="./imagenes/iconofacebook.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconofacebook2.png';" onmouseout="this.src='./imagenes/iconofacebook.png';" title="Facebook"></a>	
+                            <a href="mailto:tudireccion@email.com" target="_blank"><img id="iconos" src="./imagenes/email.png" width="25px" height="25px"
+                            onmouseover="this.src='./imagenes/emailblanco.png';" onmouseout="this.src='./imagenes/email.png';" title="Email"></a>  
+                        </div>
+                    </center>
+                    <br><br>
+                    <p>
+                        Presentación.....
+                    </p>
+                </article>	
+	        </div>
+
+  	        <div class="wrap">
+                <article>
+                   <center>
+                    <h2 class="scrollflow -slide-top -opacity">Bolsa de Trabajo y Herramientas</h2>
+                        <img class="scrollflow -pop -opacity" id="imagencircular" src="./imagenes/" width="100px" height="100px">
+                        <h3>Fernando Estrada</h3><hr>
+                     <div id="social">
+                            <a href="#" target="_blank" ><img id="iconos" src="./imagenes/iconotwitter.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconotwitter2.png';" onmouseout="this.src='./imagenes/iconotwitter.png';" title="Twitter"></a>
+                            <a href="#" target="_blank"><img id="iconos" src="./imagenes/iconofacebook.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconofacebook2.png';" onmouseout="this.src='./imagenes/iconofacebook.png';" title="Facebook"></a>	
+                            <a href="mailto:tudireccion@email.com" target="_blank"><img id="iconos" src="./imagenes/email.png" width="25px" height="25px"
+                            onmouseover="this.src='./imagenes/emailblanco.png';" onmouseout="this.src='./imagenes/email.png';" title="Email"></a>  
+                        </div>
+                    </center>
+                       <br><br>
+                        <p>
+                            Presentación.....
+                        </p>        
+                </article>
+                <article>
+                   <center>
+                    <h2 class="scrollflow -slide-top -opacity">Diseño Web y Lugares que visitar</h2>
+                        <img class="scrollflow -pop -opacity" id="imagencircular" src="./imagenes/zack.jpg" width="100px" height="100px">
+                        <h3>Ernesto Maya</h3><hr>
+                     <div id="social">
+                            <a href="#" target="_blank" ><img id="iconos" src="./imagenes/iconotwitter.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconotwitter2.png';" onmouseout="this.src='./imagenes/iconotwitter.png';" title="Twitter"></a>
+                            <a href="#" target="_blank"><img id="iconos" src="./imagenes/iconofacebook.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconofacebook2.png';" onmouseout="this.src='./imagenes/iconofacebook.png';" title="Facebook"></a>	
+                            <a href="mailto:tudireccion@email.com" target="_blank"><img id="iconos" src="./imagenes/email.png" width="25px" height="25px"
+                            onmouseover="this.src='./imagenes/emailblanco.png';" onmouseout="this.src='./imagenes/email.png';" title="Email"></a>  
+                        </div>
+                    </center>
+                    <br><br>
+                    <p>
+                        Presentación.....
+                    </p>
+                </article>
+                <article>
+                   <center>
+                    <h2 class="scrollflow -slide-top -opacity">Software Libre</h2>
+                        <img class="scrollflow -pop -opacity" id="imagencircular" src="./imagenes/christian.jpg" width="100px" height="100px">
+                        <h3>Christian</h3><hr>
+                     <div id="social">
+                            <a href="#" target="_blank" ><img id="iconos" src="./imagenes/iconotwitter.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconotwitter2.png';" onmouseout="this.src='./imagenes/iconotwitter.png';" title="Twitter"></a>
+                            <a href="#" target="_blank"><img id="iconos" src="./imagenes/iconofacebook.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconofacebook2.png';" onmouseout="this.src='./imagenes/iconofacebook.png';" title="Facebook"></a>	
+                            <a href="mailto:tudireccion@email.com" target="_blank"><img id="iconos" src="./imagenes/email.png" width="25px" height="25px"
+                            onmouseover="this.src='./imagenes/emailblanco.png';" onmouseout="this.src='./imagenes/email.png';" title="Email"></a>  
+                        </div>
+                    </center>
+                    <br><br>
+                    <p>
+                        Presentación.....
+                    </p>
+                </article>	
+	        </div>
+        </section>
+        </div>
+ 
+            
+            		        
+		        
+    	
+<!-- Footer -->
+	<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3><img src="./imagenes/nc3.png" width="250px" height="100px"></h3>
+
+				<p class="footer-links">
+					<a href="#">Inicio</a>
+					·
+					<a href="#">Software Libre</a>
+					·
+					<a href="#">Recursos</a>
+					·
+					<a href="#">Noticias</a>
+					·
+					<a href="#">Materia</a>
+					·
+					<a href="#">Visita</a>
+				</p>
+
+				<p class="footer-company-name">Nuestro Código &copy; 2016</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					
+					<p><span><img src="./imagenes/mapablanco.png" width="25px" height="25px"> Calle Prolongación San Isidro 151, Iztapalapa, San Lorenzo Tezonco, 09790 Ciudad de México, D.F.</span>Ciudad de México, México</p>
+				</div><br>
+
+				<div>
+					<p><img src="./imagenes/telefonoblanco.png" width="25px" height="25px"> 01 55 5850 1901</p>
+				</div>
+
+				</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>Nuestro Código</span>
+					Sitio web para los extudiantes de Ingeniería de Software, con la finalidad de obtener una fuente concreta y seria de conocimientos e inquietudes en el área, asi mismo alcanzar la calidad en todo el desarrollo de software durante la vida estudiantil.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i><img src="./imagenes/iconotwitterblanco.png" width="25px" height="25px"></i></a>
+					<a href="#"><i><img  src="./imagenes/iconofacebookblanco.png" width="25px" height="25px"></i></a>
+					<a href="#"><i><img src="./imagenes/bloggerblanco.png" width="25px" height="25px"</i></a>
+					<a href="#"><i><img  src="./imagenes/emailblanco.png" width="25px" height="25px"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+</body>
+</html>
