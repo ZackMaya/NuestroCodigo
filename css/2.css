@@ -94,7 +94,7 @@ div#all {
 }
 .view-first .mask {
   opacity: 0;
-  background-color: rgba(58, 1, 132, 0.44);
+  background-color:  rgba(18, 1, 120, 0.8);
   transition: all 0.4s ease-in-out;
 }
 
@@ -151,7 +151,7 @@ div#all {
 }
 .view-second .mask {
   opacity: 0;
-  background-color: rgba(58, 1, 132, 0.44);
+  background-color: rgba(18, 1, 120, 0.8);
   transition: all 0.4s ease-in-out;
 }
 
@@ -206,7 +206,7 @@ div#all {
 }
 .view-tercer .mask {
   opacity: 0;
-  background-color: rgba(58, 1, 132, 0.44);
+  background-color: rgba(18, 1, 120, 0.8);
   transition: all 0.4s ease-in-out;
 }
 
