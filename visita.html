@@ -24,6 +24,8 @@
     <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
+    <link href="./css/estilo.css" rel="stylesheet">
+
 	<!--Animate-->
 	<link rel="stylesheet" href="./css/animate.css">
     <!--Menu responsive-->
@@ -44,8 +46,9 @@
                 });
         });
 	</script>
+   
     </head>
-    <body style="background-color:black">
+    <body>
        
        <!--Menú principal-->
       <nav class="menu-navigation-basic">
@@ -57,11 +60,20 @@
 		<a href="visita.html">Visita</a>
 	</nav>
 
-    <div id="paraque">
-        <h1>Bienvenido a la sección de visitas</h1><br>
-        <h2>Encontrarás información acerca de que lugares son importantes que te des una vuelta para que conozcas y aprendas</h2>
-    </div>
-
+       <section style="background-color:black">
+        <a href="index.html"><img id="icono" src="./imagenes/nc3.png" title="Nuestro Código"></a>
+        <a href="http://www.uacm.edu.mx" target="_blank"><img id="uacm" src="./imagenes/uacm.png" alt=""></a>
+        
+    	<!--Redes sociales-->
+        <div id="social">
+			<a href="" target="_blank" ><img id="iconos" src="./imagenes/iconotwitter.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconotwitter2.png';" onmouseout="this.src='./imagenes/iconotwitter.png';" title="Twitter"></a>
+			<a href="" target="_blank"><img id="iconos" src="./imagenes/blogger.png" width="25px" height="25px" onmouseover="this.src='./imagenes/bloggerblanco.png';" onmouseout="this.src='./imagenes/blogger.png';" title="Blogger"></a>
+			<a href="https://www.facebook.com/uacemita" target="_blank"><img id="iconos" src="./imagenes/iconofacebook.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconofacebook2.png';" onmouseout="this.src='./imagenes/iconofacebook.png';" title="Facebook"></a>	
+			<a href="https://github.com/ZackMaya/NuestroCodigo" target="_blank"><img id="iconos" src="./imagenes/github3.png" width="25px" height="25px" onmouseover="this.src='./imagenes/github2.png';" onmouseout="this.src='./imagenes/github3.png';" title="Github"></a>
+        </div><br><br><br>
+        </section>
+    	
+        
     <!--Slider-->
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
