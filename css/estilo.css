@@ -155,8 +155,7 @@ hr{
     background-color: gold;
 }
 
-
-#d1{
+#d10{
     width: 100%;
     height: auto;
     display:block;
@@ -164,6 +163,14 @@ hr{
     padding-top: 20px;
     display: inline-block;
     background-color: black;
+}
+
+#d1{
+    width: 70%;
+    height: 280px;
+    display:inline-block;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 #d2{
