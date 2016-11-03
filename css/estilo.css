@@ -20,7 +20,18 @@ h5{
   z-index: -1;
   background-size: 100% 100%;
   background-repeat:no-repeat;
+  padding-top: 0px;
   background-image: url("../imagenes/otro2.png");
+}
+
+/* cambiar tipo de letra */
+nav.navbar ul.nav li {
+    color: white;
+}
+ 
+/* cambiar el color de fondo a la barra */
+nav.navbar {
+    color: white;
 }
 
 /*Redes sociales*/
@@ -34,7 +45,8 @@ h5{
 #social{
     width: 300px;
     float: right;
-    display: inline-block;
+    display: block;
+    padding-top: 10px;
 }
 
 #iconos:hover{
@@ -43,21 +55,59 @@ h5{
  transform: rotate(360deg);
 }
 
-/*icono uacm*/
-#uacm{
-    border-radius: 100px;
-    width: 400px;
-    height: 80px;
-    opacity: 0.45;
-    margin: 1em 18%;
-}
 /*logo*/
 #icono{
-    width: 250px;
-    height: 100px;
+    width: 150px;
+    height: 30px;
     border-radius: 100px;
     float: left;
-    padding-top: 5px;
+    padding-top: -2px;
+}
+
+#icono2{
+  width: 100px;
+  height: 100px;
+  padding-top: -2px;
+}
+
+#icono2:hover{
+  width: 120px;
+  height: 120px;
+
+}
+
+#iconovisita{
+text-align: center;
+width: 99%;
+padding-left: 20%;
+padding-right: 20%; 
+}
+
+#p{
+  background-image: url("../imagenes/diagrama.png");
+    z-index: -1;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  padding-top: 0px;
+  width: 100%;
+  height: 300px;
+}
+
+#i1 { 
+  float: left;
+  width: 25%;
+  display: inline-block;
+ }
+#i2 { 
+  display: inline; 
+  width: 25%;
+  display: inline-block;
+
+}
+#i3 { 
+  float: right; 
+  width: 25%;
+  display: inline-block;
 }
 
 hr{
@@ -107,12 +157,13 @@ hr{
 
 
 #d1{
-    width: 70%;
-    height: 280px;
+    width: 100%;
+    height: auto;
     display:block;
     padding-left: 20px;
     padding-top: 20px;
     display: inline-block;
+    background-color: black;
 }
 
 #d2{
@@ -141,19 +192,23 @@ hr{
 
 /**parte de las recomendaciones**/
 #fondocontenido{
-    padding-top: 100px;
+  background-color: white;
     padding-bottom: 100px;
- background-color: #010813;
+/*background-image: url("../imagenes/otraqq.jpg");
+ z-index: -1;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;*/
+  padding-top: 0px;
 }
 
 #fondocontenido h1{
-    color:whitesmoke;
+    color:black;
     font-family:serif;
     font-size: 25px;
     width: auto;    
 }
 #fondocontenido h2{
-    color: whitesmoke;
+    color: black;
     font-family:serif;
     font-size: 20px;
     padding-top: 15px;
@@ -166,8 +221,9 @@ hr{
     padding-bottom: 5px;
     width: 100%;
     height: auto;
-    /*background-image: url("../imagenes/textura.jpg");*/
-    background-color: white;
+    background-image: url("../imagenes/ttt.png");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
     z-index: -1;
 }
 
@@ -207,21 +263,26 @@ p+p{
 }
 article{
   padding: 35px;
- /* background-color: #ecf0f1;
   -webkit-column-break-inside: avoid;
-          page-break-inside: avoid;
-               break-inside: avoid;
+  page-break-inside: avoid;
+ /* break-inside: avoid;
     border-radius: 15px;
     box-shadow: 0 0 20px 1px;*/
 }
 
+article h3{
+  color: white;
+}
+
+
 article:hover{
-    /*background-color: #fc3d31;
-    box-shadow: 0 0 20px 1px red;*/
+    background-color: #fc3d31;
+    box-shadow: 0 0 20px 1px red;
 
 }
 article:hover p, article:hover h3, article:hover h2{
     color:white;
+    font-size: 16px;
 }
 article+article{
   margin: 20px 0;
@@ -236,12 +297,29 @@ article+article{
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
 }
 
+#equipo{
+      background-image: url("../imagenes/com.jpg");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+}
 
 
+/*Mensaje visita**/
+#mensaje{
+width: 70%;
+
+}
+
+#mensaje h2{
+color: #8CBA49; 
+font-family: 'Lato';
+font-size: 45px;
+font-weight:lighter;
+}
 
 /************************/
 /*Ventana modal con CSS*/
-/*Creditos y referencia http://www.webgae.com/demo/modal-con-css/#*/
+/*Creditos y referencia http://www.webgae.com/demo/modal-con-css/#
 #modal {
   left:50%;
   margin:-250px 0 0 -40%;
@@ -301,7 +379,7 @@ article+article{
   z-index: 10;
 }
 
-/*Modal2*/
+/*Modal2
 #modal2 {
   left:50%;
   margin:-250px 0 0 -40%;
