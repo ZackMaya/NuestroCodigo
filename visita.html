@@ -2,81 +2,91 @@
 <html>
 <head>
 	<title>Nuestro Código</title>
-   <link rel="shortcut icon" type="image/x-icon" href="./imagenes/">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="./imagenes/">
 	<!--Para reconocer acentos y caracteres especiales-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--estilo-->
 	<link rel="stylesheet" href="./css/estilo.css" />
-   <link rel="stylesheet" href="./css/slidervisita.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="./css/full-slider.css" rel="stylesheet">
     <!--Fuentes y librerias google-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!--Estilos para el menu principal-->
-	<link rel="stylesheet" href="assets/navigation-basic.css">
-	<link rel="stylesheet" href="assets/slicknav/slicknav.min.css">
-   <!--Menu responsivo-->
-	<script src="assets/slicknav/jquery.slicknav.min.js"></script>
-	<!--Bootstrap-->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/full-slider.css" rel="stylesheet">
-    <!--Javascript-->
-    <script src="./js/bootstrap.js"></script>
+	<!--Javascript-->
+	<script src="./js/jquery.ticker.js" type="text/javascript"></script>
+	<script src="./js/eskju.jquery.scrollflow.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-
-    <link href="./css/estilo.css" rel="stylesheet">
-
+    <script src="./js/jquery.js"></script>
 	<!--Animate-->
 	<link rel="stylesheet" href="./css/animate.css">
-    <!--Menu responsive-->
-	<script>
-		$(function(){
-	        var menu = $('.menu-navigation-basic');
-	        menu.slicknav();
-	        menu.on('click', 'a', function(){
-	            var a = $(this);
-	            a.siblings().removeClass('selected');
-	            a.addClass('selected');
-	        });
-	    });  
-        
-        $(document).ready(function(){
-            $('.collapsible').collapsible({
-            accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-                });
-        });
-	</script>
-   
-    </head>
-    <body>
-       
-       <!--Menú principal-->
-      <nav class="menu-navigation-basic">
-		<a href="index.html" class="selected">Inicio</a>
-		<a href="#">Software Libre</a>
-		<a href="#">Recursos</a>
-		<a href="#">Noticias</a>
-		<a href="#">Materia</a>
-		<a href="visita.html">Visita</a>
-	</nav>
+</head>
 
-       <section style="background-color:black">
-        <a href="index.html"><img id="icono" src="./imagenes/nc3.png" title="Nuestro Código"></a>
-        <a href="http://www.uacm.edu.mx" target="_blank"><img id="uacm" src="./imagenes/uacm.png" alt=""></a>
-        
-    	<!--Redes sociales-->
-        <div id="social">
-			<a href="" target="_blank" ><img id="iconos" src="./imagenes/iconotwitter.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconotwitter2.png';" onmouseout="this.src='./imagenes/iconotwitter.png';" title="Twitter"></a>
-			<a href="" target="_blank"><img id="iconos" src="./imagenes/blogger.png" width="25px" height="25px" onmouseover="this.src='./imagenes/bloggerblanco.png';" onmouseout="this.src='./imagenes/blogger.png';" title="Blogger"></a>
-			<a href="https://www.facebook.com/uacemita" target="_blank"><img id="iconos" src="./imagenes/iconofacebook.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconofacebook2.png';" onmouseout="this.src='./imagenes/iconofacebook.png';" title="Facebook"></a>	
-			<a href="https://github.com/ZackMaya/NuestroCodigo" target="_blank"><img id="iconos" src="./imagenes/github3.png" width="25px" height="25px" onmouseover="this.src='./imagenes/github2.png';" onmouseout="this.src='./imagenes/github3.png';" title="Github"></a>
-        </div><br><br><br>
-        </section>
-    	
-        
+<body>
+
+    <!-- Menu -->
+    <nav class="navbar navbar-default" role="navigation" style="background-color: #8CBA49">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img id="icono" src="./imagenes/nc4.png" title="Nuestro Código"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" style="color: white; font-size: 16px">Software Libre</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: white; font-size: 16px">Recursos</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: white; font-size: 16px">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: white; font-size: 16px">Materia</a>
+                    </li>
+                    <li>
+                        <a href="visita.html" style="color: white; font-size: 16px">Visita</a>
+                    </li>
+                </ul>
+                    <!--Redes sociales-->
+            <div id="social">
+                <a href="" target="_blank" ><img id="iconos" src="./imagenes/iconotwitter2.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconotwitter.png';" onmouseout="this.src='./imagenes/iconotwitter2.png';" title="Twitter"></a>
+                <a href="" target="_blank"><img id="iconos" src="./imagenes/blogger2.png" width="25px" height="25px" onmouseover="this.src='./imagenes/blogger.png';" onmouseout="this.src='./imagenes/blogger2.png';" title="Blogger"></a>
+                <a href="https://www.facebook.com/uacemita" target="_blank"><img id="iconos" src="./imagenes/iconofacebook2.png" width="25px" height="25px" onmouseover="this.src='./imagenes/iconofacebook.png';" onmouseout="this.src='./imagenes/iconofacebook2.png';" title="Facebook"></a>  
+                <a href="https://github.com/ZackMaya/NuestroCodigo" target="_blank"><img id="iconos" src="./imagenes/github3.png" width="25px" height="25px" onmouseover="this.src='./imagenes/github1.png';" onmouseout="this.src='./imagenes/github3.png';" title="Github"></a>
+            </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--icono universidad-->
+    <section >
+    <div class="container" align="center">
+      <a href="http://www.uacm.edu.mx/" class="thumb" target="_blank">  
+        <img src="./imagenes/uacm2.png" width="20%" height="20%">
+      </a>
+    </div>
+    </section>
+
+
+    <!---->
+    <center>
+    <h4 class="animated bounceInDown">¿Te gustaría saber donde son los lugares preferidos para los desarrolladores de Software?</h4>
+    </center>
+
+
+
     <!--Slider-->
     <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
+        <!-- Indicaciones -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -86,53 +96,47 @@
             <li data-target="#myCarousel" data-slide-to="5"></li>
         </ol>
 
-        <!-- Wrapper for Slides -->
+        <!-- Slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('./imagenes/telmexhub2.png');"></div>
                 <div class="carousel-caption">
                     <h2>Telmex Hub</h2>
                 </div>
             </div>
             <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('./imagenes/rancho2.png');"><h6>Licencia: https://creativecommons.org/licenses/by-sa/3.0/deed.es</h6></div>
+                <div class="fill" style="background-image:url('./imagenes/rancho.png');"><h6>Licencia: https://creativecommons.org/licenses/by-sa/3.0/deed.es</h6></div>
                 <div class="carousel-caption">
                     <h2>Rancho Eléctronico</h2>
                 </div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('');"></div>
+                <div class="fill" style="background-image:url('./imagenes/sum.png');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+                    <h2>SUM</h2>
                 </div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 4</h2>
+                    <h2>Meetup</h2>
                 </div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 5</h2>
+                    <h2>Eventos Tecnologicos</h2>
                 </div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 6</h2>
+                    <h2>Comunidades</h2>
                 </div>
             </div>
         </div>
 
-        <!-- Controls -->
+        <!-- Controles -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
         </a>
@@ -142,7 +146,37 @@
 
     </header>
     <br><br><br>
-    
+
+
+    <section>
+        <center>
+        <div id="mensaje">
+            <h2 class="scrollflow -slide-top -opacity">Algunos de los lugares que están enfocados al desarrollo de software </h2>    
+        </div>
+        </center>
+    </section>
+
+
+    <div id="iconovisita">
+            <div id="i1">
+                <img class="scrollflow -slide-up -opacity" id="icono2" src="./imagenes/cono1.png"><br><br>
+                <h5 class="scrollflow -slide-top -opacity">Estos lugares comunmente son visitados por desarrolladores para fortalecer sus conocimientos</h5>
+            </div>
+            <div id="i2">
+                <img class="scrollflow -slide-up -opacity" id="icono2" src="./imagenes/cono2.png"><br><br>
+                <h5 class="scrollflow -slide-top -opacity">Los sitios mostrados en este apartado son lugares que cuentan con la infraestructura necesaria para el desarrollo de software</h5>
+            </div>
+            <div id="i3">
+                <img class="scrollflow -slide-up -opacity" id="icono2" src="./imagenes/cono3.png"><br><br>
+                <h5 class="scrollflow -slide-top -opacity">Estos sitios son propicios para formar equipos de trabajo e ir a formar parte de un proyecto o unirse a una comunidad </h5>
+            </div>
+    </div>
+    <br><br><br>
+
+    <div id="p">
+        
+    </div>
+
     <!--Contenido carrusel-->
        <div id="d1">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -155,8 +189,18 @@
               </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <div class="panel-body" >
+                <h5 class="scrollflow -slide-top -opacity">TelmexHub es un punto de encuentro que genera conocimiento a partir de la participación activa de la comunidad.</h5><br><br>
+                <img src="./imagenes/telmexhub0.jpg"><br><br><br><br><br>
+                Es un lugar físico y virtual para jóvenes, dónde la colaboración es el principal valor; ofrecemos talleres, cursos, pláticas, conferencias que la misma comunidad de TelmexHub promueve.<br><br>
+                En TelmexHub podrás encontrar gamers, diseñadores, programadores, estudiantes, publicistas, editores, periodistas, y medios sociales que se reúnen para ampliar sus proyectos compartiendo el aprendizaje.<br><br>
+                <h4>Actividades dentro de TelmexHub</h4><br>
+                <h5 class="scrollflow -slide-top -opacity">Todos los días sesiones de trabajo en colaboración, foros, conferencias, talleres, cursos, pláticas, encuentros de comunidades, gaming, lanzamiento de productos y todo lo que tú propongas. Mantente al tanto en www.telmexhub.com/calendario.</h5> <br><br>
+                <h4>Infraestructura</h4><br>
+                <h5 class="scrollflow -slide-top -opacity">Equipo de Computo: Laptops( Toshiba, Dell, Macbook Pro), iMac, ipad<br>
+                    Sistemas operativos: Linux, Windows 7 y Snow Leopard.<br>
+                    Conectividad: Acceso a banda ancha de 10Gb vía Ethernet y WiFi.<br>
+                    Capacidad: 300 usuarios simultáneos conectados vía Ethernet.</h5>
               </div>
             </div>
           </div>
@@ -178,7 +222,7 @@
             <div class="panel-heading" role="tab" id="headingThree">
               <h4 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Otro
+                  SUM
                 </a>
               </h4>
             </div>
@@ -192,14 +236,13 @@
         </div><br><br><br><hr>
     
 
-
-
-    <!-- Footer -->
+    	
+<!-- Footer -->
 	<footer class="footer-distributed">
 
 			<div class="footer-left">
 
-				<h3><img src="./imagenes/nc3.png" width="250px" height="100px"></h3>
+				<h3><img src="./imagenes/nc4.png" width="200px" height="50px"></h3>
 
 				<p class="footer-links">
 					<a href="#">Inicio</a>
@@ -212,7 +255,7 @@
 					·
 					<a href="#">Materia</a>
 					·
-					<a href="#">Visita</a>
+					<a href="visita.html">Visita</a>
 				</p>
 
 				<p class="footer-company-name"> &copy; 2016 Nuestro Código</p>
@@ -235,7 +278,7 @@
 
 				<p class="footer-company-about">
 					<span>Nuestro Código</span>
-					Sitio web para los extudiantes de Ingeniería de Software, con la finalidad de obtener una fuente concreta y seria de conocimientos e inquietudes en el área, asi mismo alcanzar la calidad en todo el desarrollo de software durante la vida estudiantil.
+					Sitio web para los estudiantes de Ingeniería de Software, con la finalidad de obtener una fuente concreta y seria de conocimientos e inquietudes en el área, asi mismo alcanzar la calidad en todo el desarrollo de software durante la vida estudiantil.
 				</p>
 
 				<div class="footer-icons">
@@ -250,7 +293,7 @@
 			</div>
 
 		</footer>
-        
-        
-    </body>
+
+
+</body>
 </html>
